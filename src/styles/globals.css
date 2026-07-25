@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+
+@font-face{
+  font-family:"Departure Mono";
+  src:url("/fonts/DepartureMono-Regular.otf") format("opentype");
+  font-weight:400;
+  font-display:swap;
+}
+
+@font-face{
+  font-family:"Geist Mono";
+  src:url("/fonts/GeistMono[wght].ttf") format("truetype");
+  font-weight:100 900;
+  font-display:swap;
+}
+
+
+:root{
+
+--sky:#b8d9f2;
+
+--grid:rgba(0,0,0,.12);
+
+}
+
+
+*{
+  box-sizing:border-box;
+}
+
+
+html{
+  scroll-behavior:smooth;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+
+
+body{
+  margin:0;
+  background:var(--sky);
+  color:#000;
+  font-family:
+    "Geist Mono",
+    "Departure Mono",
+    monospace;
+  overflow-x:hidden;
+  -webkit-overflow-scrolling:touch;
+  /* GPU 合成层 */
+  transform:translateZ(0);
+  backface-visibility:hidden;
+}
+
+
+
+.font-mono{
+  font-family:
+    "Departure Mono",
+    "Geist Mono",
+    monospace;
+}
+
+
+h1,h2,h3{
+  letter-spacing:-0.06em;
+}
+
+
+::selection{
+  background:black;
+  color:white;
+}
+
+
+img{
+  content-visibility:auto;
+  /* 提示浏览器此元素可独立合成 */
+  backface-visibility:hidden;
+}
+
+
+section{
+  content-visibility:auto;
+  contain-intrinsic-size:auto 100vh;
+  contain:layout style;
+}
+
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+  }
+  /* 关闭滚动动画 */
+  .lenis{
+    display:none!important;
+  }
+}
+
+
+@media(max-width:768px){
+  h1,h2{
+    letter-spacing:-.04em;
+  }
+  section{
+    padding-left:24px!important;
+    padding-right:24px!important;
+  }
+}
+
+
+.dark body {
+  background: #111;
+  color: white;
+}
