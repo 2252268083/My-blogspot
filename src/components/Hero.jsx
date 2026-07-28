@@ -37,7 +37,7 @@ export default function Hero() {
       {/* ========== hello 水晶 ========== */}
       <div className="absolute inset-0 flex items-center justify-center z-10">
         <img
-          src="/hello.png"
+          src={`${import.meta.env.BASE_URL}hello.png`}
           className="hello-crystal"
           alt="hello"
         />

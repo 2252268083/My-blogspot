@@ -134,7 +134,7 @@ className="mt-10"
 
 <img
 
-src="/projects/portrait.png"
+src={`${import.meta.env.BASE_URL}projects/portrait.png`}
 
 alt="小K"
 

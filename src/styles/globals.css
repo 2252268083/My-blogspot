@@ -1,21 +1,6 @@
 @import "tailwindcss";
 
 
-@font-face{
-  font-family:"Departure Mono";
-  src:url("/fonts/DepartureMono-Regular.otf") format("opentype");
-  font-weight:400;
-  font-display:swap;
-}
-
-@font-face{
-  font-family:"Geist Mono";
-  src:url("/fonts/GeistMono[wght].ttf") format("truetype");
-  font-weight:100 900;
-  font-display:swap;
-}
-
-
 :root{
 
 --sky:#b8d9f2;
@@ -111,20 +96,6 @@ section{
   }
 }
 
-
-/* Liquid Glass Noise Texture */
-.glass-noise {
-  background-image: url("/noise.png");
-  background-size: 200px;
-  mix-blend-mode: overlay;
-  opacity: 0.04;
-}
-
-/* Liquid Glass Texture - saturate boost */
-.glass-texture {
-  backdrop-filter: blur(40px) saturate(180%);
-  -webkit-backdrop-filter: blur(40px) saturate(180%);
-}
 
 .dark body {
   background: #111;

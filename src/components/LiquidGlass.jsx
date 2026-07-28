@@ -175,23 +175,14 @@ opacity-60
 
 
 {/* Noise */}
-
 <div
-
 className="
-
 absolute
-
 inset-0
-
 opacity-[0.02]
-
 mix-blend-overlay
-
-bg-[url('/noise.png')]
-
 "
-
+style={{ backgroundImage: `url(${import.meta.env.BASE_URL}noise.png)` }}
 />
 
 

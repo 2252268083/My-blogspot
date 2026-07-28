@@ -89,7 +89,7 @@ mt-10
 
 <img
 
-src={project.image}
+src={`${import.meta.env.BASE_URL}${project.image}`}
 
 loading="lazy"
 
