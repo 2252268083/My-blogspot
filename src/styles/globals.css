@@ -112,6 +112,20 @@ section{
 }
 
 
+/* Liquid Glass Noise Texture */
+.glass-noise {
+  background-image: url("/noise.png");
+  background-size: 200px;
+  mix-blend-mode: overlay;
+  opacity: 0.04;
+}
+
+/* Liquid Glass Texture - saturate boost */
+.glass-texture {
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+}
+
 .dark body {
   background: #111;
   color: white;

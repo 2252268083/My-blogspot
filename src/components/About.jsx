@@ -25,6 +25,8 @@ return (
 
 <section
 
+id="about"
+
 ref={sectionRef}
 
 className="

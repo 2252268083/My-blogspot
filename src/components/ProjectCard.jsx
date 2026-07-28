@@ -3,6 +3,8 @@ motion
 }
 from "framer-motion";
 
+import LiquidGlass from "./LiquidGlass";
+
 
 export default function ProjectCard({
 project
@@ -11,180 +13,68 @@ project
 
 return (
 
-<motion.article
-
+<motion.div
 
 initial={{
-
 opacity:0,
-
 y:40
-
 }}
-
 
 whileInView={{
-
 opacity:1,
-
 y:0
-
 }}
-
 
 viewport={{
-
 once:true,
-
 margin:"-50px"
-
 }}
-
 
 style={{willChange:"transform, opacity"}}
 
-className="
-
-group
-
-relative
-
-cursor-pointer
-
-"
-
-
+className="group relative cursor-pointer"
 
 >
 
+
+<LiquidGlass
+
+className="
+
+p-8
+
+min-h-[420px]
+
+"
+
+>
+
+
+<div>
 
 
 <div
 
 className="
-
-relative
-
-w-full
-
-aspect-square
-
-overflow-hidden
-
-mb-3
-
-"
-
->
-
-
-<motion.img
-
-
-src={project.image}
-
-loading="lazy"
-
-
-whileHover={{
-
-scale:1.05
-
-}}
-
-
-transition={{
-
-duration:.35
-
-}}
-
-
-className="
-
-w-full
-
-h-full
-
-object-cover
-
-"
-
-style={{willChange:"transform"}}
-
- />
-
-
-
-<span
-
-className="
-
-absolute
-
-top-0
-
-right-0
-
-z-10
-
-bg-black
-
-text-white
-
-px-2
-
-py-0.5
-
 font-mono
-
-text-xs
+opacity-50
 
 "
 
 >
 
-{project.type}
-
-</span>
-
+{project.id} / PROJECT
 
 </div>
 
 
 
-
-
-<div
+<h3
 
 className="
-
-flex
-
-justify-between
-
-items-center
-
-text-xs
-
-lg:text-sm
-
-uppercase
-
-"
-
->
-
-
-<span
-
-className="
-
-truncate
-
-flex-1
-
-min-w-0
+text-6xl
+font-black
+mt-10
 
 "
 
@@ -192,39 +82,34 @@ min-w-0
 
 {project.title}
 
-</span>
+</h3>
 
 
 
-<span
+
+<img
+
+src={project.image}
+
+loading="lazy"
 
 className="
-
-font-mono
-
-tabular-nums
-
-whitespace-nowrap
-
-shrink-0
-
-ml-2
-
+rounded-3xl
+mt-12
+w-full
 "
 
->
+/>
 
-{project.year}
-
-</span>
 
 
 </div>
 
 
+</LiquidGlass>
 
-</motion.article>
 
+</motion.div>
 
 )
 

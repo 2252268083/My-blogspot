@@ -6,7 +6,7 @@
 
   "scripts": {
     "dev": "vite",
-    "build": "vite",
+    "build": "vite build",
     "preview": "vite preview"
   },
 
@@ -15,13 +15,7 @@
     "@tailwindcss/vite": "latest",
     "framer-motion": "latest",
     "lenis": "latest",
-    "three": "latest",
-    "@react-three/fiber": "latest",
-    "@react-three/drei": "latest",
-    "react-masonry-css": "latest",
     "react-helmet-async": "latest",
-    "react-router-dom": "latest",
-    "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest",
     "tailwindcss": "latest",

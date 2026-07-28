@@ -1,4 +1,5 @@
 import { useState } from "react";
+import LiquidGlass from "./LiquidGlass";
 
 export default function Navbar(){
 
@@ -41,13 +42,46 @@ XIAOK.AI
 
 
 
-<div
+<LiquidGlass
+
 className="
-flex
-gap-6
-md:gap-16
-uppercase
+
+fixed
+
+top-6
+
+left-1/2
+
+-translate-x-1/2
+
+px-8
+
+py-4
+
+rounded-full
+
+z-50
+
 "
+
+>
+
+
+
+<nav
+
+className="
+
+flex
+
+gap-10
+
+font-mono
+
+text-sm
+
+"
+
 >
 
 
@@ -60,6 +94,14 @@ className="hover:opacity-50 transition cursor-pointer"
 
 
 <a
+onClick={(e)=>{e.preventDefault();scrollTo("about")}}
+className="hover:opacity-50 transition cursor-pointer"
+>
+关于
+</a>
+
+
+<a
 onClick={(e)=>{e.preventDefault();scrollTo("contact")}}
 className="hover:opacity-50 transition cursor-pointer"
 >
@@ -67,23 +109,11 @@ className="hover:opacity-50 transition cursor-pointer"
 </a>
 
 
-<a
-onClick={()=>setThemeIdx((themeIdx+1)%themes.length)}
-className="hover:opacity-50 transition cursor-pointer"
->
-主题{themes[themeIdx]}
-</a>
+</nav>
 
 
-<a
-onClick={()=>setSoundOn(!soundOn)}
-className="hover:opacity-50 transition cursor-pointer"
->
-音效[{soundOn?"+":"-"}]
-</a>
 
-
-</div>
+</LiquidGlass>
 
 
 </nav>
