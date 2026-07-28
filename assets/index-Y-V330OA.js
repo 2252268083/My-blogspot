@@ -71,84 +71,10 @@ h-px
 bg-black/10
 `})]})}function Mf(){return(0,O.jsxs)(Xe,{children:[(0,O.jsx)(`title`,{children:`HAOQI DESIGN`}),(0,O.jsx)(`meta`,{name:`description`,content:`
 Design Engineer Portfolio
-`})]})}function Nf({children:e,className:t=``}){return(0,O.jsxs)(jd.div,{whileHover:{y:-5},transition:{duration:.5},className:`
-relative
-overflow-hidden
-
-rounded-[32px]
-
-${t}
-
-`,children:[(0,O.jsx)(`div`,{className:`
-
-absolute
-
-inset-0
-
-bg-white/20
-
-backdrop-blur-3xl
-
-`}),(0,O.jsx)(jd.div,{animate:{x:[`-50%`,`50%`,`-50%`],y:[`-20%`,`30%`,`-20%`]},transition:{duration:15,repeat:1/0,ease:`linear`},className:`
-
-absolute
-
-w-[500px]
-
-h-[500px]
-
-rounded-full
-
-bg-gradient-to-r
-
-from-cyan-200/40
-
-via-white/50
-
-to-purple-200/40
-
-blur-[90px]
-
-`}),(0,O.jsx)(`div`,{className:`
-
-absolute
-
-inset-0
-
-rounded-[32px]
-
-border
-
-border-white/50
-
-`}),(0,O.jsx)(`div`,{className:`
-
-absolute
-
-inset-0
-
-bg-gradient-to-br
-
-from-white/50
-
-via-transparent
-
-to-transparent
-
-opacity-60
-
-`}),(0,O.jsx)(`div`,{className:`
-absolute
-inset-0
-opacity-[0.02]
-mix-blend-overlay
-`,style:{backgroundImage:`url(/My-blogspot/noise.png)`}}),(0,O.jsx)(`div`,{className:`
-
-relative
-
-z-10
-
-`,children:e})]})}function Pf(){let[e,t]=(0,w.useState)(!1),[n,r]=(0,w.useState)(0),i=e=>{let t=document.getElementById(e);t&&t.scrollIntoView({behavior:`smooth`})};return(0,O.jsxs)(`nav`,{className:`
+`})]})}function Nf({children:e,className:t=``}){return(0,O.jsxs)(jd.div,{whileHover:{y:-4},transition:{duration:.4},className:`
+        relative overflow-hidden rounded-[32px]
+        ${t}
+      `,children:[(0,O.jsx)(`div`,{className:`absolute inset-0 bg-white/20 backdrop-blur-xl`}),(0,O.jsx)(`div`,{className:`absolute inset-0 rounded-[32px] border border-white/40`}),(0,O.jsx)(`div`,{className:`absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-transparent opacity-50`}),(0,O.jsx)(`div`,{className:`relative z-10`,children:e})]})}function Pf(){let[e,t]=(0,w.useState)(!1),[n,r]=(0,w.useState)(0),i=e=>{let t=document.getElementById(e);t&&t.scrollIntoView({behavior:`smooth`})};return(0,O.jsxs)(`nav`,{className:`
 absolute
 top-10
 left-16
@@ -235,7 +161,7 @@ font-black
 
 leading-none
 
-`,children:[`小`,(0,O.jsx)(`br`,{}),`K`]}),(0,O.jsx)(jd.div,{initial:{opacity:0,y:40},whileInView:{opacity:1,y:0},viewport:{once:!0},style:{y:n},className:`mt-10`,children:(0,O.jsx)(`img`,{src:`/My-blogspot/projects/portrait.png`,alt:`小K`,className:`w-64 h-80 object-cover`})})]}),(0,O.jsxs)(`div`,{className:`
+`,children:[`小`,(0,O.jsx)(`br`,{}),`K`]}),(0,O.jsx)(jd.div,{initial:{opacity:0,y:40},whileInView:{opacity:1,y:0},viewport:{once:!0},style:{y:n},className:`mt-10`,children:(0,O.jsx)(`img`,{src:`/My-blogspot/projects/portrait.jpg`,alt:`小K`,className:`w-64 h-80 object-cover`})})]}),(0,O.jsxs)(`div`,{className:`
 
 font-mono
 
@@ -262,7 +188,7 @@ font-mono
 text-lg
 leading-relaxed
 max-w-xl
-`,children:[`我是小K， 致力于计算机视觉 与AI交互探索。`,(0,O.jsx)(`br`,{}),(0,O.jsx)(`br`,{}),`我构建体感游戏、 智能识别系统 与校园互动装置。`]})]})}var Rf=[{id:`01`,title:`隔空AI切水果`,type:`体感游戏`,year:`2025-2026`,image:`projects/dev_setup.jpg`},{id:`02`,title:`骨骼姿态识别`,type:`计算机视觉`,year:`2025-2026`,image:`projects/skeleton_detect.jpg`},{id:`03`,title:`系门口AI互动`,type:`互动装置`,year:`2025-2026`,image:`projects/parent_meeting.jpg`},{id:`04`,title:`手势识别系统`,type:`计算机视觉`,year:`2025-2026`,image:`projects/skeleton_detect2.jpg`},{id:`05`,title:`家长会AI展示`,type:`教学成果`,year:`2025-2026`,image:`projects/corridor_game.jpg`}];function zf({project:e}){return(0,O.jsx)(jd.div,{initial:{opacity:0,y:40},whileInView:{opacity:1,y:0},viewport:{once:!0,margin:`-50px`},style:{willChange:`transform, opacity`},className:`group relative cursor-pointer`,children:(0,O.jsx)(Nf,{className:`
+`,children:[`我是小K， 致力于计算机视觉 与AI交互探索。`,(0,O.jsx)(`br`,{}),(0,O.jsx)(`br`,{}),`我构建体感游戏、 智能识别系统 与校园互动装置。`]})]})}var Rf=[{id:`01`,title:`隔空AI切水果`,type:`体感游戏`,year:`2025-2026`,image:`projects/dev_setup.jpg`},{id:`02`,title:`骨骼姿态识别`,type:`计算机视觉`,year:`2025-2026`,image:`projects/skeleton_detect.jpg`},{id:`03`,title:`系门口AI互动`,type:`互动装置`,year:`2025-2026`,image:`projects/parent_meeting.jpg`},{id:`04`,title:`手势识别系统`,type:`计算机视觉`,year:`2025-2026`,image:`projects/skeleton_detect2.jpg`},{id:`05`,title:`家长会AI展示`,type:`教学成果`,year:`2025-2026`,image:`projects/corridor_game.jpg`}];function zf({project:e}){return(0,O.jsx)(jd.div,{initial:{opacity:0,y:40},whileInView:{opacity:1,y:0},viewport:{once:!0,margin:`-50px`},className:`group relative cursor-pointer`,children:(0,O.jsx)(Nf,{className:`
 
 p-8
 
@@ -317,7 +243,7 @@ gap-y-8
 
 lg:gap-y-12
 
-`,children:Rf.map((e,t)=>(0,O.jsx)(`div`,{className:t===0?`col-span-12 lg:col-span-8 lg:col-start-5`:t===1?`col-span-12 lg:col-span-6 xl:col-span-5 lg:col-start-1`:t===2?`col-span-12 lg:col-span-6 xl:col-span-5 lg:col-start-7 xl:col-start-7`:t===3?`col-span-6 lg:col-span-4 xl:col-span-3 lg:col-start-5 xl:col-start-6`:t===4?`col-span-6 lg:col-span-4 xl:col-span-3 lg:col-start-9 xl:col-start-10`:t===5?`col-span-12 lg:col-span-4 xl:col-span-3 lg:col-start-1 xl:col-start-1`:t===6?`col-span-6 lg:col-span-4 xl:col-span-3 lg:col-start-5 xl:col-start-5`:t===7?`col-span-6 lg:col-span-4 xl:col-span-3 lg:col-start-9 xl:col-start-9`:t===8?`col-span-6 lg:col-span-4 xl:col-span-3 lg:col-start-5 xl:col-start-6`:`col-span-6 lg:col-span-4 xl:col-span-3 lg:col-start-9 xl:col-start-10`,children:(0,O.jsx)(zf,{project:e})},e.id))})]})}function Vf(){return(0,O.jsxs)(`section`,{className:`
+`,children:Rf.map((e,t)=>(0,O.jsx)(`div`,{style:{contentVisibility:`auto`,containIntrinsicSize:`auto 420px`},className:t===0?`col-span-12 lg:col-span-8 lg:col-start-5`:t===1?`col-span-12 lg:col-span-6 xl:col-span-5 lg:col-start-1`:t===2?`col-span-12 lg:col-span-6 xl:col-span-5 lg:col-start-7 xl:col-start-7`:t===3?`col-span-6 lg:col-span-4 xl:col-span-3 lg:col-start-5 xl:col-start-6`:t===4?`col-span-6 lg:col-span-4 xl:col-span-3 lg:col-start-9 xl:col-start-10`:t===5?`col-span-12 lg:col-span-4 xl:col-span-3 lg:col-start-1 xl:col-start-1`:t===6?`col-span-6 lg:col-span-4 xl:col-span-3 lg:col-start-5 xl:col-start-5`:t===7?`col-span-6 lg:col-span-4 xl:col-span-3 lg:col-start-9 xl:col-start-9`:t===8?`col-span-6 lg:col-span-4 xl:col-span-3 lg:col-start-5 xl:col-start-6`:`col-span-6 lg:col-span-4 xl:col-span-3 lg:col-start-9 xl:col-start-10`,children:(0,O.jsx)(zf,{project:e})},e.id))})]})}function Vf(){return(0,O.jsxs)(`section`,{className:`
 
 relative
 
