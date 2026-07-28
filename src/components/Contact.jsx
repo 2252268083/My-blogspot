@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Contact() {
+  const [showWechat, setShowWechat] = useState(false);
+
   return (
     <section
       id="contact"
@@ -20,11 +23,18 @@ export default function Contact() {
         <span>joyxiaok@Gmail.com</span>
 
         <span className="flex flex-col gap-1">
-          <span>Instagram</span>
+          <a href="https://v.douyin.com/7fhLhWthWF0/" target="_blank" rel="noopener noreferrer" className="hover:opacity-50">
+            抖音
+          </a>
           <a href="https://github.com/2252268083" target="_blank" rel="noopener noreferrer" className="hover:opacity-50">
             Github
           </a>
-          <span>LinkedIn</span>
+          <span
+            onClick={() => setShowWechat(!showWechat)}
+            className="cursor-pointer hover:opacity-50 select-none"
+          >
+            {showWechat ? "微信: lelenb886" : "微信"}
+          </span>
         </span>
       </div>
     </section>
