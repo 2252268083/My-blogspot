@@ -13,7 +13,7 @@ return (
 <Helmet>
 
 <title>
-HAOQI DESIGN
+Hello I'm Xiaok
 </title>
 
 

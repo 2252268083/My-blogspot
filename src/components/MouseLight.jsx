@@ -43,23 +43,15 @@ y:sy
 }}
 
 className="
-
 fixed
-
 w-[300px]
-
 h-[300px]
-
 rounded-full
-
 bg-white/20
-
 blur-[100px]
-
 pointer-events-none
-
 z-40
-
+hidden md:block
 "
 
 />

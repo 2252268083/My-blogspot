@@ -40,6 +40,7 @@ rounded-full
 bg-white
 mix-blend-difference
 will-change-transform
+hidden md:block
 "
 
 style={{transition:"transform .05s linear"}}

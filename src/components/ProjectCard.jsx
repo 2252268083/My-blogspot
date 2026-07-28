@@ -40,11 +40,8 @@ className="group relative cursor-pointer"
 <LiquidGlass
 
 className="
-
-p-8
-
-min-h-[420px]
-
+p-5 md:p-8
+min-h-[320px] md:min-h-[420px]
 "
 
 >
@@ -70,14 +67,11 @@ opacity-50
 
 
 <h3
-
 className="
-text-6xl
+text-4xl md:text-6xl
 font-black
-mt-10
-
+mt-6 md:mt-10
 "
-
 >
 
 {project.title}
@@ -94,8 +88,8 @@ src={`${import.meta.env.BASE_URL}${project.image}`}
 loading="lazy"
 
 className="
-rounded-3xl
-mt-12
+rounded-2xl md:rounded-3xl
+mt-8 md:mt-12
 w-full
 "
 

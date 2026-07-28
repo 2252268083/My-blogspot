@@ -61,7 +61,6 @@ h1,h2,h3{
 
 img{
   content-visibility:auto;
-  /* 提示浏览器此元素可独立合成 */
   backface-visibility:hidden;
 }
 
@@ -73,26 +72,17 @@ section{
 }
 
 
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{
-    animation-duration:.01ms!important;
-    animation-iteration-count:1!important;
-    transition-duration:.01ms!important;
-  }
-  /* 关闭滚动动画 */
-  .lenis{
-    display:none!important;
-  }
-}
-
-
+/* 移动端优化 */
 @media(max-width:768px){
   h1,h2{
     letter-spacing:-.04em;
   }
   section{
-    padding-left:24px!important;
-    padding-right:24px!important;
+    contain-intrinsic-size:auto 80vh;
+  }
+  /* 防止 iOS 双击缩放 */
+  button,a{
+    touch-action:manipulation;
   }
 }
 

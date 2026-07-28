@@ -34,8 +34,8 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen overflow-hidden bg-gradient-to-b from-[#b8dcf7] via-[#c9e7fa] to-[#a9d1f3]">
-      {/* ========== hello 水晶 ========== */}
-      <div className="absolute inset-0 flex items-center justify-center z-10">
+      {/* ========== hello 水晶 - 移动端缩小并置于底层 ========== */}
+      <div className="absolute inset-0 flex items-center justify-center z-0">
         <img
           src={`${import.meta.env.BASE_URL}hello.png`}
           className="hello-crystal"
@@ -43,33 +43,33 @@ export default function Hero() {
         />
       </div>
 
-      {/* ========== 左上 ========== */}
-      <div className="absolute left-12 top-20 z-20">
-        <div className="text-xs tracking-[0.35em]">XIAOK.AI</div>
-        <h1 className="mt-10 text-[64px] font-bold leading-[0.95]">
+      {/* ========== 左上 - 品牌 + 标题 ========== */}
+      <div className="absolute left-6 top-16 md:left-12 md:top-20 z-20">
+        <div className="text-[10px] md:text-xs tracking-[0.35em]">XIAOK.AI</div>
+        <h1 className="mt-4 md:mt-10 text-[36px] md:text-[64px] font-bold leading-[0.95]">
           AI与<br />
           交互
         </h1>
       </div>
 
-      {/* ========== 右上 ========== */}
-      <div className="absolute right-16 top-28 z-20 text-right text-sm leading-6">
+      {/* ========== 右上 - 个人介绍 ========== */}
+      <div className="absolute right-6 top-20 md:right-16 md:top-28 z-20 text-right text-[11px] md:text-sm leading-5 md:leading-6">
         I'm Xiaok,<br />
         Design Engineering<br />
         and AI exploration.
       </div>
 
-      {/* ========== 左下 ========== */}
-      <div className="absolute left-12 bottom-20 z-20">
-        <h2 className="text-[64px] font-bold leading-[0.9]">
+      {/* ========== 左下 - 主标题 ========== */}
+      <div className="absolute left-6 bottom-16 md:left-12 md:bottom-20 z-20">
+        <h2 className="text-[28px] md:text-[64px] font-bold leading-[0.9]">
           为校园生活<br />
           注入科技<br />
           与乐趣
         </h2>
       </div>
 
-      {/* ========== 底部 ========== */}
-      <div className="absolute bottom-8 left-12 right-12 z-20 flex justify-between text-xs">
+      {/* ========== 底部 - 时间 + 坐标 ========== */}
+      <div className="absolute bottom-4 left-6 right-6 md:bottom-8 md:left-12 md:right-12 z-20 flex justify-between text-[10px] md:text-xs">
         <span>北京时间 {beijingTime}</span>
         <span>
           {mousePos.x.toString().padStart(4, "0")} X{" "}
@@ -79,12 +79,18 @@ export default function Hero() {
 
       <style>{`
         .hello-crystal {
-          width: min(65vw, 900px);
+          width: min(90vw, 900px);
           filter: brightness(1.05) saturate(1.15) contrast(1.05)
                   drop-shadow(0 25px 60px rgba(80,150,255,.25));
           opacity: .78;
           mix-blend-mode: screen;
           animation: crystalFloat 8s ease-in-out infinite;
+        }
+        @media (max-width: 768px) {
+          .hello-crystal {
+            width: 95vw;
+            opacity: .55;
+          }
         }
         @keyframes crystalFloat {
           0%, 100% { transform: translateY(0); }
