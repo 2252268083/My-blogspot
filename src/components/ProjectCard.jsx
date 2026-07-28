@@ -30,7 +30,7 @@ once:true,
 margin:"-50px"
 }}
 
-style={{willChange:"transform, opacity"}}
+
 
 className="group relative cursor-pointer"
 

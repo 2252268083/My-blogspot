@@ -113,8 +113,8 @@ projects.map(
 
 
 <div
-
 key={project.id}
+style={{ contentVisibility: "auto", containIntrinsicSize: "auto 420px" }}
 
 className={
 
