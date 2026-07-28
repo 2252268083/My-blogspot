@@ -3,23 +3,26 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "build:gh-pages": "VITE_BASE=/My-blogspot/ vite build",
-    "preview": "vite preview"
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
   },
-
   "dependencies": {
-    "@vitejs/plugin-react": "latest",
     "@tailwindcss/vite": "latest",
+    "@vitejs/plugin-react": "latest",
     "framer-motion": "latest",
     "lenis": "latest",
-    "react-helmet-async": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-helmet-async": "latest",
     "tailwindcss": "latest",
     "vite": "latest"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.47.0",
+    "wrangler": "^4.114.0"
   }
 }

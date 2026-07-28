@@ -9,10 +9,10 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
+
 export default defineConfig({
   base: process.env.VITE_BASE || "/",
-  plugins: [
-    react(),
-    tailwindcss()
-  ]
+  plugins: [react(), tailwindcss(), cloudflare()]
 });
